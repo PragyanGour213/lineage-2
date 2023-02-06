@@ -1,0 +1,47 @@
+{
+  "nodes": {
+    "rdj": {
+      "templateData": {
+        "fullName": "Robert Downey Jr.",
+        "description": "Movies"
+      }
+    },
+    "judge": {
+      "templateData": {
+        "fullName": "The Judge",
+        "description": "Hank Palmer"
+      }
+    },
+    "ironman": {
+      "templateData": {
+        "fullName": "Iron Man",
+        "description": "Tony stark"
+      },
+      "children": {
+        "irchild1": {
+          "templateData": {
+            "icon": "i-hashtag",
+            "title": "Iron man 1"
+          }
+        },
+        "irchild2": {
+          "templateData": {
+            "icon": "i-paragraph",
+            "title": "Iron man 2"
+          }
+        }
+      },
+      "hideChildren": false
+    }
+  },
+  "links": [
+    {
+      "from": "rdj",
+      "to": "judge"
+    },
+    {
+      "from": "rdj",
+      "to": "ironman"
+    }
+  ]
+}
